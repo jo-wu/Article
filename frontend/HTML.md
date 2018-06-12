@@ -1,7 +1,20 @@
-U# Hello HTML
+# Hello HTML
+
+<small>HyperText Mark-up Language</small>
+
+<small>超文本标记语言</small>
 
 
 ## **<center> 目录 </center>**
+
+
+参考链接：
+
+HTML 参考手册：http://www.w3school.com.cn/tags/index.asp
+
+HTML 标签缩写参照表：
+https://www.cnblogs.com/ideaspace/p/7134381.html?utm_source=itdadao&utm_medium=referral
+
 
 
 ## **HTML标签**
@@ -20,18 +33,21 @@ U# Hello HTML
 
 **格式化标签**
 
-| 标签         | 描述     |
-| :------: | :------: |
-|&lt;b&gt;     | 粗体文本 |
-|&lt;big&gt;   | 大字号   |
-|&lt;em&gt;    | 着重文字 |
-|&lt;i&gt;     | 斜体字   |
-|&lt;small&gt; | 小号字   |
-|&lt;strong&gt;| 加重语气 |
-|&lt;sub&gt;   | 下标字   |
-|&lt;sup&gt;   | 插入字   |
-|&lt;ins&gt;   | 上标字   |
-|&lt;del&gt;   | 删除字   |
+| 标签         | 描述     | 实际效果     |
+| :------: | :------: | :------: |
+|&lt;b&gt;     | 粗体文本 |<b>This text is bold</b>
+|&lt;big&gt;   | 大字号   |<big>big</big>
+|&lt;em&gt;    | 着重文字 |<em>This text is emphasized</em>
+|&lt;i&gt;     | 斜体字   |<i>This text is italic</i>
+|&lt;small&gt; | 小号字   |<small>small</small>
+|&lt;strong&gt;| 加重语气 |<strong>This text is strong</strong>
+|&lt;sub&gt;   | 下标字   |<sub>sub</sub>
+|&lt;sup&gt;   | 上标字   |<sup>sup</sup>
+|&lt;ins&gt;   | 插入字   |<ins>ins</ins>
+|&lt;del&gt;   | 删除字   |<del> delete </del>
+|&lt;code&gt;  | 代码字体 |<code>This is some computer code</code>
+
+&lt;ins&gt; 标签
 
 
 ## **HTML超链接**
@@ -40,7 +56,9 @@ U# Hello HTML
 超链接（anchor） &lt;a&gt;
 
 通用属性：href、target、name
+
 专有属性：
+
 
 <a name="label">Text to be displayed</a>
 
@@ -191,7 +209,7 @@ Last name:
 <input type="radio" name="sex" value="male" /> Male
 <br />
 <input type="radio" name="sex" value="female" /> Female
-</form>
+</form>0
 ```
 **输出：**
 <form>
@@ -201,7 +219,8 @@ Last name:
 </form>
 
 表单的动作属性（Action）和确认按钮
-```<form name="input" action="html_form_action.asp" method="get">
+```
+<form name="input" action="html_form_action.asp" method="get">
 Username: 
 <input type="text" name="user" />
 <input type="submit" value="Submit" />
@@ -218,5 +237,33 @@ Username:
 ## **HTML框架**
 
 ---
+
+
+## **HTML属性**
+
+---
+
+HTML 全局属性
+= HTML5 中添加的属性。
+
+| 属性   | 描述  |
+| :------: | :------: |
+|accesskey	             |规定激活元素的快捷键。
+|class	                 |规定元素的一个或多个类名（引用样式表中的类）。
+|contenteditable     (H5)|规定元素内容是否可编辑。
+|contextmenu	     (H5)|规定元素的上下文菜单。上下文菜单在用户点击元素时显示。
+|data-*              (H5)|用于存储页面或应用程序的私有定制数据。
+|dir                     |规定元素中内容的文本方向。
+|draggable           (H5)|规定元素是否可拖动。
+|dropzone            (H5)|规定在拖动被拖动数据时是否进行复制、移动或链接。
+|hidden              (H5)|规定元素仍未或不再相关。
+|id                      |规定元素的唯一 id。
+|lang                    |规定元素内容的语言。
+|spellcheck          (H5)|规定是否对元素进行拼写和语法检查。
+|style                   |规定元素的行内 CSS 样式。
+|tabindex                |规定元素的 tab 键次序。
+|title                   |规定有关元素的额外信息。
+|translate           (H5)|规定是否应该翻译元素内容。
+
 
 
