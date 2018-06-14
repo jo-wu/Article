@@ -1,24 +1,88 @@
-# ES6 way to typescript
+# TypeScript -- ES6 finally going to
 
-## 一、Typescript语言特性
-### 1)类型
+## 一、TypeScript语言特性
+
+---
+
+### 1)基本类型
 
 特点：可选的静态类型声明
 
 指定类型：number，boolean，string，array，enum
 
-推导类型：0，”job”
+**number:**
+```
+//十进制
+let decLiteral: number = 6;
+
+//十六进制
+let hexLiteral: number = 0xf00d;
+
+//二进制
+let binaryLiteral: number = 0b1010;
+
+//八进制
+let octalLiteral: number = 0o744; 
+```
+
+**boolean:**
+```
+let isDone: boolean = false;
+let isDone: boolean = true;
+```
+
+**string:**
+```
+let name: string = "bob";
+```
+<small><i>模版字符串</i></small>
+
+**array:**
+```
+let list: number[] = [1, 2, 3];
+```
+<small><i>数组泛型</i></small>
+
+<small><i>元组 Tuple</i></small>
+
+**enum:**
+```
+enum Color {Red, Green, Blue}
+let c: Color = Color.Green;
+```
 
 未知类型：any
 
-### 2)变量、基本类型和运算符
+**any:**
+```
+let notSure: any = 4;
+notSure = "maybe a string instead";
+notSure = false; // okay, definitely a boolean
+```
+
+### 2)变量声明和运算符
+
+let 声明
+
+const 声明
+
+
 ### 3)流程控制语句
+
+
+
+
+
+
 ### 4)函数
 ### 5)类
 ### 6)接口
 ### 7)命名空间
 
 ## 二、使用函数
+
+---
+
 <small>1、在Typescript中使用函数</small>
 ### 1)函数声明和函数表达式
 ### 2)函数类型
@@ -41,6 +105,10 @@
 ### 6)异步函数--async和await
 
 ## 三、Typescript中的面向对象编程
+
+---
+
+
 ### 1)SOLID原则
 
 OOP开发时需要遵守的5个原则：SOLID原则
@@ -71,6 +139,9 @@ SOLID原则：
 ### 9)命名空间
 
 ## 四、装饰器
+
+---
+
 ### 1)注解和装饰器
 ### 2)类装饰器
 ### 3)方法装饰器
@@ -83,3 +154,5 @@ SOLID原则：
 
 
 
+参考链接：
+https://www.tslang.cn/docs/handbook/basic-types.html
