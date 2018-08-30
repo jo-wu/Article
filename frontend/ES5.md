@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript/ES5
 
 https://wangdoc.com/javascript/basic/grammar.html
 
@@ -113,6 +113,8 @@ atob('SGVsbG8gV29ybGQh') // "Hello World!"
 ---
 
 ## 闭包 (closure)
+
+return
 
 
 ## 立即调用的函数表达式（IIFE）
