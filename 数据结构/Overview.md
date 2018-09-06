@@ -1,5 +1,7 @@
 # 数据结构
 
+https://github.com/kdn251/interviews/blob/master/README-zh-cn.md
+
 ### 基本数据结构
 
 - 数组
@@ -7,14 +9,15 @@
 
 ### 常用数据结构
 
-- 队列（queue）
+- 队列（Queue）
     优先队列
-- 栈（stack）
-- 表（table）
+- 栈（Stack）
+- 表（Table）
     - 邻接表
-- 树（tree）
+- 树（Tree）
     - 二叉树
-- 堆（heap）
+- 堆（Heap）
+- 图（Graph）
 
 ### 高级数据结构
 
