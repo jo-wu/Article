@@ -2,18 +2,18 @@
 
 https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
 
-## 基础
+# 基础
 
 ---
 
-### 面向对象的编程原则
+## 面向对象的编程原则
 
 对象
 消息
 类
 继承
 
-### 语法
+## 语法
 
 变量
 数组
@@ -21,50 +21,56 @@ https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
 操作符
 流程控制
 
-### 类与对象
+## 类与对象
 
 使用类来创建对象
 
-### 注解
+## 注解
 
-### 数字类型与字符串类型
+## 数字类型与字符串类型
 
-### 范型
+## 范型
 
-### package
-
----
-
-### 进阶
-
-### 异常处理
-
-### I/O
-
-### 并发
-
-### 正则表达式
+## package
 
 ---
 
-## 高级
+# 进阶
 
-### 集合
+## 异常处理
 
-### lambda表达式
+## I/O
 
-### 聚合操作
+## 并发
 
-### Packaging Programs In JAR Files
+## 正则表达式
 
-### 国际化
+---
 
-### 反射
+# 高级
 
-### 安全
+## 集合
+https://docs.oracle.com/javase/tutorial/collections/index.html
 
-### JavaBeans
+### HashMap
+HashMap是一个键值对存储数据结构，基本的结构：```HashMap<key, value>```
 
-### 扩展机制
+HashMap源码相关建议阅读：https://blog.csdn.net/login_sonata/article/details/76598675
 
-### 范型
+## lambda表达式
+
+## 聚合操作
+
+## Packaging Programs In JAR Files
+
+## 国际化
+
+## 反射
+
+## 安全
+
+## JavaBeans
+
+## 扩展机制
+
+## 范型

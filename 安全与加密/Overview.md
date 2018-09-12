@@ -10,8 +10,8 @@
 - HMAC(Hash Message Authentication Code，散列消息鉴别码)
 
 
-
-彩虹表
+密码破解方法：
+暴力破解、彩虹表、查询表、逆向查询表、
 
 对抗彩虹表：加盐哈希（ Hashing with Salt）
 
@@ -36,4 +36,7 @@ Number Generator，CSPRNG ）产生。
 2、将盐值混入用户输入的密码，并且使用通用的哈希函数进行加密。
 3、比较上一步的结果，是否和数据库存储的哈希值相同。如果它们相同，则表明密码是正确的；否则，该密码错误。
 
+
+Web网络攻击：
+XSS、CSRF、SQL注入
 
