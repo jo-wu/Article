@@ -2,12 +2,12 @@
 
 https://github.com/kdn251/interviews/blob/master/README-zh-cn.md
 
-### 基本数据结构
+## 基本数据结构
 
 - 数组
 - 链表
 
-### 常用数据结构
+## 常用数据结构
 
 - 队列（Queue）
     优先队列
@@ -19,6 +19,14 @@ https://github.com/kdn251/interviews/blob/master/README-zh-cn.md
 - 堆（Heap）
 - 图（Graph）
 
-### 高级数据结构
+
+
+树
+- BST
+- AVL树
+- RBT
+
+
+## 高级数据结构
 
 https://segmentfault.com/a/1190000013512245
