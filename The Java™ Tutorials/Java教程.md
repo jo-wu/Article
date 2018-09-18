@@ -49,8 +49,44 @@ https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
 
 # 高级
 
-## 集合
-https://docs.oracle.com/javase/tutorial/collections/index.html
+## [集合](https://docs.oracle.com/javase/tutorial/collections/index.html)
+
+## [简介](https://docs.oracle.com/javase/tutorial/collections/intro/index.html)
+
+    一个集合框架包含了三个要素，Interface、Implementations、Algorithm。
+
+## Interface
+
+[Collection](https://docs.oracle.com/javase/tutorial/collections/interfaces/collection.html)
+
+[Set](https://docs.oracle.com/javase/tutorial/collections/interfaces/set.html)
+
+[List](https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html)
+
+[Queue](https://docs.oracle.com/javase/tutorial/collections/interfaces/queue.html)
+
+[Deque](https://docs.oracle.com/javase/tutorial/collections/interfaces/deque.html)
+
+[Map](https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html)
+
+---
+[SortedSet](https://docs.oracle.com/javase/tutorial/collections/interfaces/sorted-set.html)
+
+[SortedMap](https://docs.oracle.com/javase/tutorial/collections/interfaces/sorted-map.html)
+
+---
+
+## [聚合操作](https://docs.oracle.com/javase/tutorial/collections/streams/index.html)
+
+
+## [实现](https://docs.oracle.com/javase/tutorial/collections/implementations/index.html)
+
+## [算法](https://docs.oracle.com/javase/tutorial/collections/algorithms/index.html)
+
+## [自定义实现](https://docs.oracle.com/javase/tutorial/collections/custom-implementations/index.html)
+
+## [互操作性](https://docs.oracle.com/javase/tutorial/collections/interoperability/index.html)
+
 
 ### HashMap
 HashMap是一个键值对存储数据结构，基本的结构：```HashMap<key, value>```
