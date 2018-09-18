@@ -63,11 +63,40 @@ https://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html
 
 [List](https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html)
 
+#### <b>集合操作</b>
+#### <b>迭代器</b>
+#### <b>Range-view操作</b>
+#### <b>List Algorithms</b>
+Most polymorphic algorithms in the Collections class apply specifically to List. Having all these algorithms at your disposal makes it very easy to manipulate lists. Here's a summary of these algorithms, which are described in more detail in the Algorithms section.
+
+- sort — sorts a List using a merge sort algorithm, which provides a fast, stable sort. (A stable sort is one that does not reorder equal elements.)
+- shuffle — randomly permutes the elements in a List.
+- reverse — reverses the order of the elements in a List.
+- rotate — rotates all the elements in a List by a specified distance.
+- swap — swaps the elements at specified positions in a List.
+- replaceAll — replaces all occurrences of one specified value with another.
+- fill — overwrites every element in a List with the specified value.
+- copy — copies the source List into the destination List.
+- binarySearch — searches for an element in an ordered List using the binary search algorithm.
+- indexOfSubList — returns the index of the first sublist of one List that is equal to another.
+- lastIndexOfSubList — returns the index of the last sublist of one List that is equal to another.
+
 [Queue](https://docs.oracle.com/javase/tutorial/collections/interfaces/queue.html)
 
 [Deque](https://docs.oracle.com/javase/tutorial/collections/interfaces/deque.html)
 
 [Map](https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html)
+
+#### <b>Map Interface Basic Operations</b>
+#### <b>Collection Views</b>
+The Collection view methods allow a Map to be viewed as a Collection in these three ways:
+
+- keySet — the Set of keys contained in the Map.
+- values — The Collection of values contained in the Map. This Collection is not a Set, because multiple keys can map to the same value.
+- entrySet — the Set of key-value pairs contained in the Map. The Map interface provides a small nested interface called Map.Entry, the type of the elements in this Set.
+
+#### <b>Fancy Uses of Collection Views: Map Algebra</b>
+#### <b>Multimaps</b>
 
 ---
 [SortedSet](https://docs.oracle.com/javase/tutorial/collections/interfaces/sorted-set.html)
