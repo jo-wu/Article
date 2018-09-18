@@ -46,8 +46,9 @@ A Statement is an interface that represents a SQL statement. You execute Stateme
 For example, CoffeesTables.viewTable creates a Statement object with the following code:
 ```
 stmt = con.createStatement();
-There are three different kinds of statements:
 ```
+There are three different kinds of statements:
+
 Statement: Used to implement simple SQL statements with no parameters.
 PreparedStatement: (Extends Statement.) Used for precompiling SQL statements that might contain input parameters. See Using Prepared Statements for more information.
 CallableStatement: (Extends PreparedStatement.) Used to execute stored procedures that may contain both input and output parameters. See Stored Procedures for more information.
@@ -60,8 +61,9 @@ executeUpdate: Returns an integer representing the number of rows affected by th
 For example, CoffeesTables.viewTable executed a Statement object with the following code:
 ```
 ResultSet rs = stmt.executeQuery(query);
-See Retrieving and Modifying Values from Result Sets for more information.
 ```
+See Retrieving and Modifying Values from Result Sets for more information.
+
 Processing ResultSet Objects
 You access the data in a ResultSet object through a cursor. Note that this cursor is not a database cursor. This cursor is a pointer that points to one row of data in the ResultSet object. Initially, the cursor is positioned before the first row. You call various methods defined in the ResultSet object to move the cursor.
 
