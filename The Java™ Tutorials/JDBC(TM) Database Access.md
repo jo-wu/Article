@@ -8,6 +8,38 @@ In general, to process any SQL statement with JDBC, you follow these steps:
 - Process the ResultSet object.
 - Close the connection.
 
+A simple Demo:
+```
+
+    public Student showTable() throws SQLException{
+        Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Fred","root","1226");//step.1
+//        Statement statement = null;
+        String query = "SELECT * FROM sutdent";
+
+        Student student = new Student();
+
+        try(Statement statement = connection.createStatement()/*step.2*/){
+            ResultSet resultSet = statement.executeQuery(query);//step.3
+            while (resultSet.next()){
+                student.setName(resultSet.getString(1));
+                student.setPassword(resultSet.getString(2));
+                student.setClassroom(resultSet.getString(3));
+                student.setAge(resultSet.getInt(4));
+                //step.4
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }finally {
+            connection.close();//step.5
+        }
+        return student;
+    }
+
+
+```
+
+
+
 This page uses the following method, CoffeesTables.viewTable, from the tutorial sample to demonstrate these steps. This method outputs the contents of the table COFFEES. This method will be discussed in more detail later in this tutorial:
 ```
 public static void viewTable(Connection con, String dbName)
