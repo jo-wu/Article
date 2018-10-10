@@ -1,20 +1,78 @@
+# 准备工作
+
+```
+DROP DATABASE IF EXISTS student;
+CREATE DATABASE IF NOT EXISTS student character set utf8;
+USE student;
+SHOW TABLES;
+CREATE TABLE IF NOT EXISTS student(
+  name VARCHAR(8),
+  id VARCHAR(8),
+  school VARCHAR(8),
+  class VARCHAR(8)
+);
+CREATE TABLE IF NOT EXISTS studentb(
+  name VARCHAR(8),
+  id VARCHAR(8),
+  school VARCHAR(8),
+  class VARCHAR(8)
+)DEFAULT CHARSET utf8;
+CREATE TABLE IF NOT EXISTS teacher(
+  name VARCHAR(8),
+  id VARCHAR(8),
+  school VARCHAR(8)
+);
+CREATE TABLE IF NOT EXISTS teacherb(
+  name VARCHAR(8),
+  id VARCHAR(8),
+  school VARCHAR(8)
+);
+CREATE TABLE IF NOT EXISTS course(
+  name VARCHAR(8),
+  id VARCHAR(8),
+  teacher VARCHAR(8),
+  time VARCHAR(8),
+  student VARCHAR(8)
+);
+INSERT INTO student VALUES ('张三','001','信息学院','计算机班');
+INSERT INTO student VALUES ('李四','002','信息学院','计算机班');
+INSERT INTO student VALUES ('王五','003','信息学院','计算机班');
+INSERT INTO student VALUES ('小六','004','信息学院','计算机班');
+
+INSERT INTO studentb VALUES ('小吴','005','信息学院','计算机班');
+
+INSERT INTO teacher VALUES ('老白','001','信息学院');
+INSERT INTO teacher VALUES ('老李','002','信息学院');
+INSERT INTO teacher VALUES ('老黄','003','信息学院');
+INSERT INTO teacher VALUES ('老江','004','信息学院');
+
+INSERT INTO teacherb VALUES ('老黄','003','信息学院');
+INSERT INTO teacherb VALUES ('老江','004','信息学院');
+INSERT INTO teacherb VALUES ('老陈','005','信息学院');
+
+INSERT INTO course VALUES ('计算机概述','001','老白','星期二','张三-李四');
+INSERT INTO course VALUES ('算法入门阿','002','老李','星期三','张三-王五');
+INSERT INTO course VALUES ('计算机原理','003','老江','星期四','李四-王五');
+INSERT INTO course VALUES ('计算机炒菜','004','老黄','星期五','李四-小六');
+```
+
 # 增删改查
 
 ## Insert
 ```
-INSERT INTO table_name VALUES (column1, column2, ...);
+INSERT INTO student VALUES ('小六','004','信息学院','计算机班');
 ```
 ## Delete
 ```
-DELETE  FROM table_name WHERE column=value;
+DELETE FROM table_name WHERE column=value;
 ```
 ## Update
 ```
-UPDATE student SET column = new_value WHERE column=value;
+UPDATE student SET name='小七' WHERE id='004';
 ```
 ## Select
 ```
-SELECT * FROM table_name;
+SELECT * FROM student;
 ```
 # 新建数据库与表
 
@@ -37,9 +95,48 @@ RIGHT JOIN 同LEFT JOIN类似
 
 
 # 存储过程
+
+//带输入参数的存储过程
+```
+DROP PROCEDURE insert_into_student_by_procedure_with_parameters;
+
+CREATE PROCEDURE insert_into_student_by_procedure_with_parameters
+(IN name VARCHAR(8), 
+IN id VARCHAR(8), 
+IN school VARCHAR(8), 
+IN class VARCHAR(8)) 
+INSERT INTO studentb(name, id, school, class) VALUES (
+  name, 
+  id, 
+  school, 
+  class);
+```
+
+//带输入输出参数的存储过程
+```
+DROP PROCEDURE IF EXISTS get_name_by_id;
+
+CREATE PROCEDURE get_name_by_id(
+  IN cid VARCHAR(8), 
+  OUT return_name VARCHAR(8)
+  ) 
+  SELECT name INTO return_name 
+  FROM student 
+  WHERE id=cid;
+```
+
 # 存储函数
 
+
+
+
+
 # 数据库事务
+
+
+
+
+
 
 ## [数据库事务的ACID](https://blog.csdn.net/qq_25448409/article/details/78110430)
 
